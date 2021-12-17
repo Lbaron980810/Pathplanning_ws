@@ -204,12 +204,15 @@ void JPSPathFinder::JPSGraphSearch(Eigen::Vector3d start_pt, Eigen::Vector3d end
         */
 
         // if the current node is the goal 
+        currentPtr = openSet.begin() -> second;
         if( currentPtr->index == goalIdx ){
             ros::Time time_2 = ros::Time::now();
             terminatePtr = currentPtr;
             ROS_WARN("[JPS]{sucess} Time in JPS is %f ms, path cost if %f m", (time_2 - time_1).toSec() * 1000.0, currentPtr->gScore * resolution );    
             return;
         }
+        openSet.erase(openSet.begin());
+        currentPtr->id = -1;
         //get the succetion
         JPSGetSucc(currentPtr, neighborPtrSets, edgeCostSets); //we have done it for you
         
@@ -232,6 +235,13 @@ void JPSPathFinder::JPSGraphSearch(Eigen::Vector3d start_pt, Eigen::Vector3d end
             neighborPtrSets[i]->id = 1 : expanded, equal to this node is in close set
             *        
             */
+            neighborPtr = neighborPtrSets[i];
+            if ( isOccupied(neighborPtr->index) || neighborPtr -> id == -1 )
+            {
+                continue;
+            }
+            double edge_cost = edgeCostSets[i];            
+            tentative_gScore = currentPtr -> gScore + edge_cost; 
             if(neighborPtr -> id != 1){ //discover a new node
                 /*
                 *
@@ -240,6 +250,11 @@ void JPSPathFinder::JPSGraphSearch(Eigen::Vector3d start_pt, Eigen::Vector3d end
                 please write your code below
                 *        
                 */
+                neighborPtr -> id = 1;
+                neighborPtr -> gScore = tentative_gScore;
+                neighborPtr -> fScore = getHeu(neighborPtr, endPtr) + neighborPtr -> gScore;
+                neighborPtr -> cameFrom = currentPtr;
+                neighborPtr -> nodeMapIt = openSet.insert( make_pair(neighborPtr->fScore, neighborPtr) );
                 continue;
             }
             else if(tentative_gScore <= neighborPtr-> gScore){ //in open set and need update
@@ -251,7 +266,11 @@ void JPSPathFinder::JPSGraphSearch(Eigen::Vector3d start_pt, Eigen::Vector3d end
                 *        
                 */
 
-
+                neighborPtr -> gScore = tentative_gScore;
+                neighborPtr -> fScore = getHeu(neighborPtr, endPtr) + tentative_gScore;
+                neighborPtr -> cameFrom = currentPtr;
+                openSet.erase(neighborPtr -> nodeMapIt);
+                neighborPtr -> nodeMapIt = openSet.insert( make_pair(neighborPtr->fScore, neighborPtr) );
                 // if change its parents, update the expanding direction 
                 //THIS PART IS ABOUT JPS, you can ignore it when you do your Astar work
                 for(int i = 0; i < 3; i++){

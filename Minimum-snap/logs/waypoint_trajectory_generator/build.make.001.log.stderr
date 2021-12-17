@@ -1,0 +1,43 @@
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(int, const MatrixXd&, const MatrixXd&, const MatrixXd&, const VectorXd&)[m[K’:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:53:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kp_numld[m[K’ was not declared in this scope
+     MatrixXd A = MatrixXd::Zero([01;31m[Kp_numld[m[K * m, p_numld * m);
+                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:53:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kp_num1d[m[K’
+     MatrixXd A = MatrixXd::Zero([01;36m[Kp_numld[m[K * m, p_numld * m);
+                                 [01;36m[K^~~~~~~[m[K
+                                 [32m[Kp_num1d[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:57:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope
+      [01;31m[Kt[m[K = Time[i];
+      [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:57:6:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktm[m[K’
+      [01;36m[Kt[m[K = Time[i];
+      [01;36m[K^[m[K
+      [32m[Ktm[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:62:14:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K-Wparentheses[m[K]
+        if ([01;35m[Kk = j[m[K) A_j(j, k) = Factorial(k);
+            [01;35m[K~~^~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[KdPx[m[K’ was not declared in this scope
+     dx << d_Fx, [01;31m[KdPx[m[K;
+                 [01;31m[K^~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:168:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[K_Px[m[K’
+     dx << d_Fx, [01;36m[KdPx[m[K;
+                 [01;36m[K^~~[m[K
+                 [32m[K_Px[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:169:17:[m[K [01;31m[Kerror: [m[K‘[01m[KdPy[m[K’ was not declared in this scope
+     dy << d_Fy, [01;31m[KdPy[m[K;
+                 [01;31m[K^~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:169:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[K_Py[m[K’
+     dy << d_Fy, [01;36m[KdPy[m[K;
+                 [01;36m[K^~~[m[K
+                 [32m[K_Py[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:170:17:[m[K [01;31m[Kerror: [m[K‘[01m[KdPz[m[K’ was not declared in this scope
+     dz << d_Fz, [01;31m[KdPz[m[K;
+                 [01;31m[K^~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:170:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[K_Pz[m[K’
+     dz << d_Fz, [01;36m[KdPz[m[K;
+                 [01;36m[K^~~[m[K
+                 [32m[K_Pz[m[K
+make[2]: *** [CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/trajectory_generator_node.dir/all] Error 2
+make: *** [all] Error 2

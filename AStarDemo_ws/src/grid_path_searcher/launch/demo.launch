@@ -1,4 +1,6 @@
 <launch>
+<!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find gird_path_searcher)/launch/rviz_config/demo.rviz" required="true" /> -->
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find grid_path_searcher)/launch/rviz_config/demo.rviz" required="true" />
 
 <arg name="map_size_x" default="20.0"/>
 <arg name="map_size_y" default="20.0"/>

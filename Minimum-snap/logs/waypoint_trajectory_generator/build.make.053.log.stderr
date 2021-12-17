@@ -1,0 +1,15 @@
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(int, const MatrixXd&, const MatrixXd&, const MatrixXd&, const VectorXd&)[m[K’:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:192:15:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::EigenBase<Derived>::Index Eigen::EigenBase<Derived>::size() const [with Derived = Eigen::Matrix<double, -1, 1>; Eigen::EigenBase<Derived>::Index = long int][m[K’
+     [01;31m[Kstd::cout << Px.size[m[K << std::endl;
+     [01;31m[K~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:417:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/EigenBase.h:66:16:[m[K [01;36m[Knote: [m[Kdeclared here
+   inline Index [01;36m[Ksize[m[K() const { return rows() * cols(); }
+                [01;36m[K^~~~[m[K
+make[2]: *** [CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o] Error 1
+make[1]: *** [CMakeFiles/trajectory_generator_node.dir/all] Error 2
+make: *** [all] Error 2

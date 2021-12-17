@@ -1,0 +1,145 @@
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(int, const MatrixXd&, const MatrixXd&, const MatrixXd&, const VectorXd&)[m[K’:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:179:63:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 0 * p_num1d, 1, p_num1d) = Px.segment<[01;31m[Kp_num1d[m[K>(i * p_num1d);
+                                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:179:83:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<double, -1, 1>::segment<p_num1d>(int)[m[K’
+      PolyCoeff.block(i, 0 * p_num1d, 1, p_num1d) = Px.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:573:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:415[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:981:49:[m[K [01;36m[Knote: [m[Kcandidate: template<int N> typename Eigen::DenseBase<Derived>::FixedSegmentReturnType<Size>::Type Eigen::DenseBase<Derived>::segment(Eigen::Index, Eigen::Index) [with int N = N; Derived = Eigen::Matrix<double, -1, 1>]
+ inline typename FixedSegmentReturnType<N>::Type [01;36m[Ksegment[m[K(Index start, Index n = N)
+                                                 [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:981:49:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:179:83:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 0 * p_num1d, 1, p_num1d) = Px.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:179:83:[m[K [01;36m[Knote: [m[Kin template argument for type ‘[01m[Kint[m[K’ 
+      PolyCoeff.block(i, 0 * p_num1d, 1, p_num1d) = Px.segment<p_num1d>(i * p_num1d[01;36m[K)[m[K;
+                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:573:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:415[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:990:54:[m[K [01;36m[Knote: [m[Kcandidate: template<int N> typename Eigen::DenseBase<Derived>::ConstFixedSegmentReturnType<Size>::Type Eigen::DenseBase<Derived>::segment(Eigen::Index, Eigen::Index) const [with int N = N; Derived = Eigen::Matrix<double, -1, 1>]
+ inline typename ConstFixedSegmentReturnType<N>::Type [01;36m[Ksegment[m[K(Index start, Index n = N) const
+                                                      [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:990:54:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:179:83:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 0 * p_num1d, 1, p_num1d) = Px.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:179:83:[m[K [01;36m[Knote: [m[Kin template argument for type ‘[01m[Kint[m[K’ 
+      PolyCoeff.block(i, 0 * p_num1d, 1, p_num1d) = Px.segment<p_num1d>(i * p_num1d[01;36m[K)[m[K;
+                                                                                   [01;36m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:180:63:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 1 * p_num1d, 1, p_num1d) = Py.segment<[01;31m[Kp_num1d[m[K>(i * p_num1d);
+                                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:180:83:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<double, -1, 1>::segment<p_num1d>(int)[m[K’
+      PolyCoeff.block(i, 1 * p_num1d, 1, p_num1d) = Py.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:573:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:415[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:981:49:[m[K [01;36m[Knote: [m[Kcandidate: template<int N> typename Eigen::DenseBase<Derived>::FixedSegmentReturnType<Size>::Type Eigen::DenseBase<Derived>::segment(Eigen::Index, Eigen::Index) [with int N = N; Derived = Eigen::Matrix<double, -1, 1>]
+ inline typename FixedSegmentReturnType<N>::Type [01;36m[Ksegment[m[K(Index start, Index n = N)
+                                                 [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:981:49:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:180:83:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 1 * p_num1d, 1, p_num1d) = Py.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:180:83:[m[K [01;36m[Knote: [m[Kin template argument for type ‘[01m[Kint[m[K’ 
+      PolyCoeff.block(i, 1 * p_num1d, 1, p_num1d) = Py.segment<p_num1d>(i * p_num1d[01;36m[K)[m[K;
+                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:573:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:415[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:990:54:[m[K [01;36m[Knote: [m[Kcandidate: template<int N> typename Eigen::DenseBase<Derived>::ConstFixedSegmentReturnType<Size>::Type Eigen::DenseBase<Derived>::segment(Eigen::Index, Eigen::Index) const [with int N = N; Derived = Eigen::Matrix<double, -1, 1>]
+ inline typename ConstFixedSegmentReturnType<N>::Type [01;36m[Ksegment[m[K(Index start, Index n = N) const
+                                                      [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:990:54:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:180:83:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 1 * p_num1d, 1, p_num1d) = Py.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:180:83:[m[K [01;36m[Knote: [m[Kin template argument for type ‘[01m[Kint[m[K’ 
+      PolyCoeff.block(i, 1 * p_num1d, 1, p_num1d) = Py.segment<p_num1d>(i * p_num1d[01;36m[K)[m[K;
+                                                                                   [01;36m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:181:63:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 2 * p_num1d, 1, p_num1d) = Pz.segment<[01;31m[Kp_num1d[m[K>(i * p_num1d);
+                                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:181:83:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<double, -1, 1>::segment<p_num1d>(int)[m[K’
+      PolyCoeff.block(i, 2 * p_num1d, 1, p_num1d) = Pz.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:573:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:415[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:981:49:[m[K [01;36m[Knote: [m[Kcandidate: template<int N> typename Eigen::DenseBase<Derived>::FixedSegmentReturnType<Size>::Type Eigen::DenseBase<Derived>::segment(Eigen::Index, Eigen::Index) [with int N = N; Derived = Eigen::Matrix<double, -1, 1>]
+ inline typename FixedSegmentReturnType<N>::Type [01;36m[Ksegment[m[K(Index start, Index n = N)
+                                                 [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:981:49:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:181:83:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 2 * p_num1d, 1, p_num1d) = Pz.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:181:83:[m[K [01;36m[Knote: [m[Kin template argument for type ‘[01m[Kint[m[K’ 
+      PolyCoeff.block(i, 2 * p_num1d, 1, p_num1d) = Pz.segment<p_num1d>(i * p_num1d[01;36m[K)[m[K;
+                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/src/Core/DenseBase.h:573:0[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:415[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.h:4[m[K,
+                 from [01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:990:54:[m[K [01;36m[Knote: [m[Kcandidate: template<int N> typename Eigen::DenseBase<Derived>::ConstFixedSegmentReturnType<Size>::Type Eigen::DenseBase<Derived>::segment(Eigen::Index, Eigen::Index) const [with int N = N; Derived = Eigen::Matrix<double, -1, 1>]
+ inline typename ConstFixedSegmentReturnType<N>::Type [01;36m[Ksegment[m[K(Index start, Index n = N) const
+                                                      [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:990:54:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:181:83:[m[K [01;31m[Kerror: [m[Kthe value of ‘[01m[Kp_num1d[m[K’ is not usable in a constant expression
+      PolyCoeff.block(i, 2 * p_num1d, 1, p_num1d) = Pz.segment<p_num1d>(i * p_num1d[01;31m[K)[m[K;
+                                                                                   [01;31m[K^[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:45:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint p_num1d[m[K’ is not const
+     int [01;36m[Kp_num1d[m[K   = p_order + 1;                  // the number of variables in each segment
+         [01;36m[K^~~~~~~[m[K
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:181:83:[m[K [01;36m[Knote: [m[Kin template argument for type ‘[01m[Kint[m[K’ 
+      PolyCoeff.block(i, 2 * p_num1d, 1, p_num1d) = Pz.segment<p_num1d>(i * p_num1d[01;36m[K)[m[K;
+                                                                                   [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o] Error 1
+make[1]: *** [CMakeFiles/trajectory_generator_node.dir/all] Error 2
+make: *** [all] Error 2

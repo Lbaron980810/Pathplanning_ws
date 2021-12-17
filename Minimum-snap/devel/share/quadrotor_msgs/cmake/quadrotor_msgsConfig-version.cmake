@@ -1,0 +1,1 @@
+/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake

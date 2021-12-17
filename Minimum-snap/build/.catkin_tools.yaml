@@ -1,0 +1,6 @@
+devel_space: /home/liuboyuu/Pathplanning_ws/chap5_ws/devel
+install: false
+install_space: /home/liuboyuu/Pathplanning_ws/chap5_ws/install
+profile: default
+source_space: /home/liuboyuu/Pathplanning_ws/chap5_ws/src
+workspace: /home/liuboyuu/Pathplanning_ws/chap5_ws

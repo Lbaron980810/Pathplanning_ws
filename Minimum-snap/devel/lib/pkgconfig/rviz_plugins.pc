@@ -1,0 +1,1 @@
+/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/rviz_plugins/lib/pkgconfig/rviz_plugins.pc

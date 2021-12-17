@@ -1,0 +1,8 @@
+prefix=/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_trajectory_generator
+
+Name: waypoint_trajectory_generator
+Description: Description of waypoint_trajectory_generator
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

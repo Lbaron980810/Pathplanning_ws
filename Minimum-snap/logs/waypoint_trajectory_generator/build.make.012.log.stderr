@@ -1,0 +1,8 @@
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(int, const MatrixXd&, const MatrixXd&, const MatrixXd&, const VectorXd&)[m[K’:
+[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_waypoint.cpp:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::MatrixXd {aka class Eigen::Matrix<double, -1, -1>}[m[K’ has no member named ‘[01m[Kcolumns[m[K’; did you mean ‘[01m[Kcols[m[K’?
+     std::cout << A.rows() << " " << A.[01;31m[Kcolumns[m[K() << std::endl;
+                                       [01;31m[K^~~~~~~[m[K
+                                       [32m[Kcols[m[K
+make[2]: *** [CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o] Error 1
+make[1]: *** [CMakeFiles/trajectory_generator_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,8 @@
+prefix=/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/rviz_plugins
+
+Name: rviz_plugins
+Description: Description of rviz_plugins
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
