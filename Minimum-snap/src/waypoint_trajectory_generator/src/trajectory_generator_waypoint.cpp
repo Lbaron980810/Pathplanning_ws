@@ -140,7 +140,7 @@ Eigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(
     // std::cout << "Test flag" << std::endl;
 
     /*	 Produce Matrix C_trans(m * p_num1d, Path.rows() * d_order) & C   */
-    MatrixXd C_trans = MatrixXd::Zero(m * p_num1d, n * d_order);
+    MatrixXd C_trans = MatrixXd::Zero(m * 2 * d_order, n * d_order);
     MatrixXd C = MatrixXd::Zero(n * d_order, m * p_num1d);
     std::cout << C.rows() << "	" << C.cols() << std::endl;
     for (int i = 0; i < d_order; i++)  // start point and end point

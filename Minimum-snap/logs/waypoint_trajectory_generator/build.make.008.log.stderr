@@ -1,7 +1,0 @@
-[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[KEigen::VectorXd timeAllocation(Eigen::MatrixXd)[m[K’:
-[01m[K/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator/src/trajectory_generator_node.cpp:297:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
-  return time[01;31m[K;[m[K
-             [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_node.cpp.o] Error 1
-make[1]: *** [CMakeFiles/trajectory_generator_node.dir/all] Error 2
-make: *** [all] Error 2

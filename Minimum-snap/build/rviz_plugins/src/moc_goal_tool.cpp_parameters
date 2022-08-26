@@ -3,5 +3,5 @@
 -DROSCONSOLE_BACKEND_LOG4CXX
 -DQT_NO_KEYWORDS
 -o
-/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/src/moc_goal_tool.cpp
-/home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins/src/goal_tool.h
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/src/moc_goal_tool.cpp
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins/src/goal_tool.h

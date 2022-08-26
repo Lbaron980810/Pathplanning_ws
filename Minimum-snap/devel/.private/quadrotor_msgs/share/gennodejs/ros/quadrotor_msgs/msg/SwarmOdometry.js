@@ -61,7 +61,7 @@ class SwarmOdometry {
   static getMessageSize(object) {
     let length = 0;
     length += nav_msgs.msg.Odometry.getMessageSize(object.odom);
-    length += object.name.length;
+    length += _getByteLength(object.name);
     return length + 4;
   }
 

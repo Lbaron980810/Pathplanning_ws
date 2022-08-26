@@ -136,7 +136,7 @@ void visWayPointTraj( MatrixXd polyCoeff, VectorXd time)
     visualization_msgs::Marker _traj_vis;
 
     _traj_vis.header.stamp       = ros::Time::now();
-    _traj_vis.header.frame_id    = "/map";
+    _traj_vis.header.frame_id    = "map";
 
     _traj_vis.ns = "traj_node/trajectory_waypoints";
     _traj_vis.id = 0;
@@ -188,7 +188,7 @@ void visWayPointPath(MatrixXd path)
 {
     visualization_msgs::Marker points, line_list;
     int id = 0;
-    points.header.frame_id    = line_list.header.frame_id    = "/map";
+    points.header.frame_id    = line_list.header.frame_id    = "map";
     points.header.stamp       = line_list.header.stamp       = ros::Time::now();
     points.ns                 = line_list.ns                 = "wp_path";
     points.action             = line_list.action             = visualization_msgs::Marker::ADD;

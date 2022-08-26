@@ -180,16 +180,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> >
   : TrueType
   { };
@@ -197,6 +187,16 @@ struct IsMessage< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quadrotor_msgs::PPROutputData_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

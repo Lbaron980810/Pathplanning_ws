@@ -1,1 +1,1 @@
-/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake

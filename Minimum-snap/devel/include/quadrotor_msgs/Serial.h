@@ -1,1 +1,1 @@
-/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Serial.h
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Serial.h

@@ -107,16 +107,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> >
   : TrueType
   { };
@@ -124,6 +114,16 @@ struct IsMessage< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quadrotor_msgs::SwarmCommand_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

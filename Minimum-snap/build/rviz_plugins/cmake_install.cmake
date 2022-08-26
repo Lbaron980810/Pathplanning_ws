@@ -1,8 +1,8 @@
-# Install script for directory: /home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins
+# Install script for directory: /home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liuboyuu/Pathplanning_ws/chap5_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,98 +49,98 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liuboyuu/Pathplanning_ws/chap5_ws/install/_setup_util.py")
+   "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liuboyuu/Pathplanning_ws/chap5_ws/install" TYPE PROGRAM FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install" TYPE PROGRAM FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liuboyuu/Pathplanning_ws/chap5_ws/install/env.sh")
+   "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liuboyuu/Pathplanning_ws/chap5_ws/install" TYPE PROGRAM FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install" TYPE PROGRAM FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liuboyuu/Pathplanning_ws/chap5_ws/install/setup.bash;/home/liuboyuu/Pathplanning_ws/chap5_ws/install/local_setup.bash")
+   "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/setup.bash;/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liuboyuu/Pathplanning_ws/chap5_ws/install" TYPE FILE FILES
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/setup.bash"
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install" TYPE FILE FILES
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/setup.bash"
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liuboyuu/Pathplanning_ws/chap5_ws/install/setup.sh;/home/liuboyuu/Pathplanning_ws/chap5_ws/install/local_setup.sh")
+   "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/setup.sh;/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liuboyuu/Pathplanning_ws/chap5_ws/install" TYPE FILE FILES
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/setup.sh"
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install" TYPE FILE FILES
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/setup.sh"
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liuboyuu/Pathplanning_ws/chap5_ws/install/setup.zsh;/home/liuboyuu/Pathplanning_ws/chap5_ws/install/local_setup.zsh")
+   "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/setup.zsh;/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liuboyuu/Pathplanning_ws/chap5_ws/install" TYPE FILE FILES
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/setup.zsh"
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install" TYPE FILE FILES
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/setup.zsh"
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liuboyuu/Pathplanning_ws/chap5_ws/install/.rosinstall")
+   "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liuboyuu/Pathplanning_ws/chap5_ws/install" TYPE FILE FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install" TYPE FILE FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/rviz_plugins.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/rviz_plugins.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/cmake" TYPE FILE FILES
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig.cmake"
-    "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig-version.cmake"
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig.cmake"
+    "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/catkin_generated/installspace/rviz_pluginsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -150,7 +150,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/rviz_plugins/lib/librviz_plugins.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/rviz_plugins/lib/librviz_plugins.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librviz_plugins.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -160,20 +160,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins/plugin_description.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/media" TYPE DIRECTORY FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins/media/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins" TYPE FILE FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins/plugin_description.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/icons" TYPE DIRECTORY FILES "/home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins/icons/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/media" TYPE DIRECTORY FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins/media/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rviz_plugins/icons" TYPE DIRECTORY FILES "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins/icons/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/gtest/cmake_install.cmake")
+  include("/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/gtest/cmake_install.cmake")
 
 endif()
 
@@ -185,5 +188,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/liuboyuu/Pathplanning_ws/chap5_ws/build/rviz_plugins/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/rviz_plugins/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

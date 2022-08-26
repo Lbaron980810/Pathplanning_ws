@@ -32,8 +32,9 @@ include_directories(include
   	${Eigen3_INCLUDE_DIRS} 
 )
 
-add_executable(trajectory_generator_node 
-	src/trajectory_generator_node.cpp
+add_executable(trajectory_generator_node
+	src/traj_opt_test.cpp
+#	src/trajectory_generator_node.cpp
 	src/trajectory_generator_waypoint.cpp
 )
 

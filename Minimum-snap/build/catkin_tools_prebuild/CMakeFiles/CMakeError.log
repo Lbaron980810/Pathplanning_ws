@@ -1,55 +1,58 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ee5cb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ee5cb.dir/build.make CMakeFiles/cmTC_ee5cb.dir/build
-make[1]: Entering directory '/home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ee5cb.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ee5cb.dir/CheckSymbolExists.c.o   -c /home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ee5cb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee5cb.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ee5cb.dir/CheckSymbolExists.c.o  -o cmTC_ee5cb 
-CMakeFiles/cmTC_ee5cb.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+Run Build Command(s):/usr/bin/make cmTC_e3c84/fast && /usr/bin/make -f CMakeFiles/cmTC_e3c84.dir/build.make CMakeFiles/cmTC_e3c84.dir/build
+make[1]: Entering directory '/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3c84.dir/src.c.o
+/usr/lib/ccache/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e3c84.dir/src.c.o   -c /home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e3c84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3c84.dir/link.txt --verbose=1
+/usr/lib/ccache/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e3c84.dir/src.c.o  -o cmTC_e3c84 
+/usr/bin/ld: CMakeFiles/cmTC_e3c84.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ee5cb.dir/build.make:97: recipe for target 'cmTC_ee5cb' failed
-make[1]: *** [cmTC_ee5cb] Error 1
-make[1]: Leaving directory '/home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_ee5cb/fast' failed
-make: *** [cmTC_ee5cb/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_e3c84.dir/build.make:87: cmTC_e3c84] Error 1
+make[1]: Leaving directory '/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e3c84/fast] Error 2
 
-File /home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
+
+Source file was:
 #include <pthread.h>
 
-int main(int argc, char** argv)
+void* test_func(void* data)
 {
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
   return 0;
-#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
+Change Dir: /home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a73e5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a73e5.dir/build.make CMakeFiles/cmTC_a73e5.dir/build
-make[1]: Entering directory '/home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a73e5.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a73e5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a73e5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a73e5.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a73e5.dir/CheckFunctionExists.c.o  -o cmTC_a73e5 -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_5cb57/fast && /usr/bin/make -f CMakeFiles/cmTC_5cb57.dir/build.make CMakeFiles/cmTC_5cb57.dir/build
+make[1]: Entering directory '/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cb57.dir/CheckFunctionExists.c.o
+/usr/lib/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5cb57.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5cb57
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cb57.dir/link.txt --verbose=1
+/usr/lib/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_5cb57.dir/CheckFunctionExists.c.o  -o cmTC_5cb57  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a73e5.dir/build.make:97: recipe for target 'cmTC_a73e5' failed
-make[1]: *** [cmTC_a73e5] Error 1
-make[1]: Leaving directory '/home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a73e5/fast' failed
-make: *** [cmTC_a73e5/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_5cb57.dir/build.make:87: cmTC_5cb57] Error 1
+make[1]: Leaving directory '/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5cb57/fast] Error 2
+
 
 

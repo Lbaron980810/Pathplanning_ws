@@ -6,22 +6,22 @@ import stat
 import sys
 
 # find the import for catkin's python package - either from source space or from an installed underlay
-if os.path.exists(os.path.join('/opt/ros/melodic/share/catkin/cmake', 'catkinConfig.cmake.in')):
-    sys.path.insert(0, os.path.join('/opt/ros/melodic/share/catkin/cmake', '..', 'python'))
+if os.path.exists(os.path.join('/opt/ros/noetic/share/catkin/cmake', 'catkinConfig.cmake.in')):
+    sys.path.insert(0, os.path.join('/opt/ros/noetic/share/catkin/cmake', '..', 'python'))
 try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/home/liuboyuu/git-nrs/tilt_propeller/catkin_ws/devel;/home/liuboyuu/omniAM/Catkin-WS/devel;/opt/ros/melodic'.split(';'):
-        python_path = os.path.join(workspace, 'lib/python2.7/dist-packages')
+    for workspace in '/opt/ros/noetic'.split(';'):
+        python_path = os.path.join(workspace, 'lib/python3/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/catkin_tools_prebuild/env.sh')
+code = generate_environment_script('/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/catkin_tools_prebuild/env.sh')
 
-output_filename = '/home/liuboyuu/Pathplanning_ws/chap5_ws/build/catkin_tools_prebuild/catkin_generated/setup_cached.sh'
+output_filename = '/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/catkin_tools_prebuild/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

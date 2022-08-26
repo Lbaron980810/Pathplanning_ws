@@ -32,6 +32,17 @@
 (intern "*PPR_GAINS*" (find-package "QUADROTOR_MSGS::SERIAL"))
 (shadow '*PPR_GAINS* (find-package "QUADROTOR_MSGS::SERIAL"))
 (defconstant quadrotor_msgs::Serial::*PPR_GAINS* 103)
+
+(defun quadrotor_msgs::Serial-to-symbol (const)
+  (cond
+        ((= const 115) 'quadrotor_msgs::Serial::*SO3_CMD*)
+        ((= const 112) 'quadrotor_msgs::Serial::*TRPY_CMD*)
+        ((= const 99) 'quadrotor_msgs::Serial::*STATUS_DATA*)
+        ((= const 100) 'quadrotor_msgs::Serial::*OUTPUT_DATA*)
+        ((= const 116) 'quadrotor_msgs::Serial::*PPR_OUTPUT_DATA*)
+        ((= const 103) 'quadrotor_msgs::Serial::*PPR_GAINS*)
+        (t nil)))
+
 (defclass quadrotor_msgs::Serial
   :super ros::object
   :slots (_header _channel _type _data ))

@@ -67,14 +67,14 @@ set(rviz_plugins_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rviz_plugins_SOURCE_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/src/rviz_plugins)
-  set(rviz_plugins_DEVEL_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/rviz_plugins)
+  set(rviz_plugins_SOURCE_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/rviz_plugins)
+  set(rviz_plugins_DEVEL_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/rviz_plugins)
   set(rviz_plugins_INSTALL_PREFIX "")
   set(rviz_plugins_PREFIX ${rviz_plugins_DEVEL_PREFIX})
 else()
   set(rviz_plugins_SOURCE_PREFIX "")
   set(rviz_plugins_DEVEL_PREFIX "")
-  set(rviz_plugins_INSTALL_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/install)
+  set(rviz_plugins_INSTALL_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/install)
   set(rviz_plugins_PREFIX ${rviz_plugins_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/liuboyuu/Pathplanning_ws/chap5_ws/install/lib;/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/lib;/home/liuboyuu/git-nrs/tilt_propeller/catkin_ws/devel/lib;/home/liuboyuu/omniAM/Catkin-WS/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/lib;/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(rviz_plugins_LIBRARIES ${rviz_plugins_LIBRARIES})
 
   _list_append_unique(rviz_plugins_LIBRARY_DIRS ${${rviz_plugins_dep}_LIBRARY_DIRS})
-  list(APPEND rviz_plugins_EXPORTED_TARGETS ${${rviz_plugins_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(rviz_plugins_EXPORTED_TARGETS ${${rviz_plugins_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

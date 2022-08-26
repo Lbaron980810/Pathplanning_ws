@@ -37,6 +37,18 @@
 (intern "*TRAJECTORY_STATUS_IMPOSSIBLE*" (find-package "QUADROTOR_MSGS::POSITIONCOMMAND"))
 (shadow '*TRAJECTORY_STATUS_IMPOSSIBLE* (find-package "QUADROTOR_MSGS::POSITIONCOMMAND"))
 (defconstant quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_IMPOSSIBLE* 7)
+
+(defun quadrotor_msgs::PositionCommand-to-symbol (const)
+  (cond
+        ((= const 0) 'quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_EMPTY*)
+        ((= const 1) 'quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_READY*)
+        ((= const 3) 'quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_COMPLETED*)
+        ((= const 4) 'quadrotor_msgs::PositionCommand::*TRAJECTROY_STATUS_ABORT*)
+        ((= const 5) 'quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_ILLEGAL_START*)
+        ((= const 6) 'quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_ILLEGAL_FINAL*)
+        ((= const 7) 'quadrotor_msgs::PositionCommand::*TRAJECTORY_STATUS_IMPOSSIBLE*)
+        (t nil)))
+
 (defclass quadrotor_msgs::PositionCommand
   :super ros::object
   :slots (_header _position _velocity _acceleration _yaw _yaw_dot _kx _kv _trajectory_id _trajectory_flag ))

@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target trajectory_generator_node[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o[0m
-[ 66%] [32m[1mLinking CXX executable /home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_trajectory_generator/lib/waypoint_trajectory_generator/trajectory_generator_node[0m
-[100%] Built target trajectory_generator_node

@@ -1,1 +1,1 @@
-/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake

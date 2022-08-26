@@ -29,6 +29,16 @@
 (intern "*ACTION_WARN_IMPOSSIBLE*" (find-package "QUADROTOR_MSGS::SPATIALTEMPORALTRAJECTORY"))
 (shadow '*ACTION_WARN_IMPOSSIBLE* (find-package "QUADROTOR_MSGS::SPATIALTEMPORALTRAJECTORY"))
 (defconstant quadrotor_msgs::SpatialTemporalTrajectory::*ACTION_WARN_IMPOSSIBLE* 5)
+
+(defun quadrotor_msgs::SpatialTemporalTrajectory-to-symbol (const)
+  (cond
+        ((= const 1) 'quadrotor_msgs::SpatialTemporalTrajectory::*ACTION_ADD*)
+        ((= const 2) 'quadrotor_msgs::SpatialTemporalTrajectory::*ACTION_ABORT*)
+        ((= const 3) 'quadrotor_msgs::SpatialTemporalTrajectory::*ACTION_WARN_START*)
+        ((= const 4) 'quadrotor_msgs::SpatialTemporalTrajectory::*ACTION_WARN_FINAL*)
+        ((= const 5) 'quadrotor_msgs::SpatialTemporalTrajectory::*ACTION_WARN_IMPOSSIBLE*)
+        (t nil)))
+
 (defclass quadrotor_msgs::SpatialTemporalTrajectory
   :super ros::object
   :slots (_header _start_time _final_time _trajectory_id _action _K _K_max _a _b _s _time _time_acc _s_step _num_order _num_segment _start_yaw _final_yaw _coef_x _coef_y _coef_z _range _mag_coeff _order _debug_info ))

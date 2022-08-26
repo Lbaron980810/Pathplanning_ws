@@ -198,7 +198,7 @@ class PolynomialTrajectory {
     length += 8 * object.coef_z.length;
     length += 8 * object.time.length;
     length += 4 * object.order.length;
-    length += object.debug_info.length;
+    length += _getByteLength(object.debug_info);
     return length + 64;
   }
 

@@ -29,6 +29,16 @@
 (intern "*ACTION_WARN_IMPOSSIBLE*" (find-package "QUADROTOR_MSGS::POLYNOMIALTRAJECTORY"))
 (shadow '*ACTION_WARN_IMPOSSIBLE* (find-package "QUADROTOR_MSGS::POLYNOMIALTRAJECTORY"))
 (defconstant quadrotor_msgs::PolynomialTrajectory::*ACTION_WARN_IMPOSSIBLE* 5)
+
+(defun quadrotor_msgs::PolynomialTrajectory-to-symbol (const)
+  (cond
+        ((= const 1) 'quadrotor_msgs::PolynomialTrajectory::*ACTION_ADD*)
+        ((= const 2) 'quadrotor_msgs::PolynomialTrajectory::*ACTION_ABORT*)
+        ((= const 3) 'quadrotor_msgs::PolynomialTrajectory::*ACTION_WARN_START*)
+        ((= const 4) 'quadrotor_msgs::PolynomialTrajectory::*ACTION_WARN_FINAL*)
+        ((= const 5) 'quadrotor_msgs::PolynomialTrajectory::*ACTION_WARN_IMPOSSIBLE*)
+        (t nil)))
+
 (defclass quadrotor_msgs::PolynomialTrajectory
   :super ros::object
   :slots (_header _trajectory_id _action _num_order _num_segment _start_yaw _final_yaw _coef_x _coef_y _coef_z _time _mag_coeff _order _debug_info ))

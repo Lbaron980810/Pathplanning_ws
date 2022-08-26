@@ -23,6 +23,14 @@
 (intern "*STATUS_ODOM_LOOPCLOSURE*" (find-package "QUADROTOR_MSGS::ODOMETRY"))
 (shadow '*STATUS_ODOM_LOOPCLOSURE* (find-package "QUADROTOR_MSGS::ODOMETRY"))
 (defconstant quadrotor_msgs::Odometry::*STATUS_ODOM_LOOPCLOSURE* 2)
+
+(defun quadrotor_msgs::Odometry-to-symbol (const)
+  (cond
+        ((= const 0) 'quadrotor_msgs::Odometry::*STATUS_ODOM_VALID*)
+        ((= const 1) 'quadrotor_msgs::Odometry::*STATUS_ODOM_INVALID*)
+        ((= const 2) 'quadrotor_msgs::Odometry::*STATUS_ODOM_LOOPCLOSURE*)
+        (t nil)))
+
 (defclass quadrotor_msgs::Odometry
   :super ros::object
   :slots (_curodom _kfodom _kfid _status ))

@@ -1,1 +1,1 @@
-/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake

@@ -1,4 +1,4 @@
-prefix=/home/liuboyuu/Pathplanning_ws/chap5_ws/install
+prefix=/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

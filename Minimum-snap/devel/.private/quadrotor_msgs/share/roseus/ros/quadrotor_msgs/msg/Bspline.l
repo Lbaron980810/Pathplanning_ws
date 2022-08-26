@@ -29,6 +29,16 @@
 (intern "*ACTION_WARN_IMPOSSIBLE*" (find-package "QUADROTOR_MSGS::BSPLINE"))
 (shadow '*ACTION_WARN_IMPOSSIBLE* (find-package "QUADROTOR_MSGS::BSPLINE"))
 (defconstant quadrotor_msgs::Bspline::*ACTION_WARN_IMPOSSIBLE* 5)
+
+(defun quadrotor_msgs::Bspline-to-symbol (const)
+  (cond
+        ((= const 1) 'quadrotor_msgs::Bspline::*ACTION_ADD*)
+        ((= const 2) 'quadrotor_msgs::Bspline::*ACTION_ABORT*)
+        ((= const 3) 'quadrotor_msgs::Bspline::*ACTION_WARN_START*)
+        ((= const 4) 'quadrotor_msgs::Bspline::*ACTION_WARN_FINAL*)
+        ((= const 5) 'quadrotor_msgs::Bspline::*ACTION_WARN_IMPOSSIBLE*)
+        (t nil)))
+
 (defclass quadrotor_msgs::Bspline
   :super ros::object
   :slots (_action _order _traj_id _knots _pts _start_time _time_extra _replan_to_global_time ))
@@ -40,7 +50,7 @@
     ((:order __order) 0)
     ((:traj_id __traj_id) 0)
     ((:knots __knots) (make-array 0 :initial-element 0.0 :element-type :float))
-    ((:pts __pts) (let (r) (dotimes (i 0) (push (instance geometry_msgs::Point :init) r)) r))
+    ((:pts __pts) ())
     ((:start_time __start_time) (instance ros::time :init))
     ((:time_extra __time_extra) 0.0)
     ((:replan_to_global_time __replan_to_global_time) 0.0)

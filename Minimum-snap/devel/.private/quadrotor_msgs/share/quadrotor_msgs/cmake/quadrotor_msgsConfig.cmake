@@ -67,14 +67,14 @@ set(quadrotor_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(quadrotor_msgs_SOURCE_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/src/quadrotor_msgs)
-  set(quadrotor_msgs_DEVEL_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs)
+  set(quadrotor_msgs_SOURCE_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/quadrotor_msgs)
+  set(quadrotor_msgs_DEVEL_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs)
   set(quadrotor_msgs_INSTALL_PREFIX "")
   set(quadrotor_msgs_PREFIX ${quadrotor_msgs_DEVEL_PREFIX})
 else()
   set(quadrotor_msgs_SOURCE_PREFIX "")
   set(quadrotor_msgs_DEVEL_PREFIX "")
-  set(quadrotor_msgs_INSTALL_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/install)
+  set(quadrotor_msgs_INSTALL_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/install)
   set(quadrotor_msgs_PREFIX ${quadrotor_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(quadrotor_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/include " STREQUAL " ")
+if(NOT "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/include " STREQUAL " ")
   set(quadrotor_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/include")
+  set(_include_dirs "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/quadrotor_msgs " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/in
         message(FATAL_ERROR "Project 'quadrotor_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'quadrotor_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/liuboyuu/Pathplanning_ws/chap5_ws/src/quadrotor_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'quadrotor_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/quadrotor_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(quadrotor_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/lib;/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/lib;/home/liuboyuu/git-nrs/tilt_propeller/catkin_ws/devel/lib;/home/liuboyuu/omniAM/Catkin-WS/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/lib;/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(quadrotor_msgs_LIBRARIES ${quadrotor_msgs_LIBRARIES})
 
   _list_append_unique(quadrotor_msgs_LIBRARY_DIRS ${${quadrotor_msgs_dep}_LIBRARY_DIRS})
-  list(APPEND quadrotor_msgs_EXPORTED_TARGETS ${${quadrotor_msgs_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(quadrotor_msgs_EXPORTED_TARGETS ${${quadrotor_msgs_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "quadrotor_msgs-msg-extras.cmake")

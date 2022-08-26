@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/lib;/opt/ros/melodic/lib")
+set(ORDERED_PATHS "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/lib;/opt/ros/noetic/lib")

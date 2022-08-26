@@ -42,11 +42,11 @@
    (&optional __angle_corrections)
    (if __angle_corrections (setq _angle_corrections __angle_corrections)) _angle_corrections)
   (:enable_motors
-   (&optional __enable_motors)
-   (if __enable_motors (setq _enable_motors __enable_motors)) _enable_motors)
+   (&optional (__enable_motors :null))
+   (if (not (eq __enable_motors :null)) (setq _enable_motors __enable_motors)) _enable_motors)
   (:use_external_yaw
-   (&optional __use_external_yaw)
-   (if __use_external_yaw (setq _use_external_yaw __use_external_yaw)) _use_external_yaw)
+   (&optional (__use_external_yaw :null))
+   (if (not (eq __use_external_yaw :null)) (setq _use_external_yaw __use_external_yaw)) _use_external_yaw)
   (:serialization-length
    ()
    (+

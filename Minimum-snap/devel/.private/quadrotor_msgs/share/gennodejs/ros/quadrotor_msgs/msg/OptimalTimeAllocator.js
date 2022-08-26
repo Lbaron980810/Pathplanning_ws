@@ -199,7 +199,7 @@ class OptimalTimeAllocator {
     length += 8 * object.s.length;
     length += 8 * object.time.length;
     length += 8 * object.time_acc.length;
-    length += object.debug_info.length;
+    length += _getByteLength(object.debug_info);
     return length + 64;
   }
 

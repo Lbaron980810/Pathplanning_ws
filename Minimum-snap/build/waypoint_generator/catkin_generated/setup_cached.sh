@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_generator:$CMAKE_PREFIX_PATH"
-export PWD='/home/liuboyuu/Pathplanning_ws/chap5_ws/build/waypoint_generator'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_generator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_generator:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_generator:$CMAKE_PREFIX_PATH"
+export PWD='/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/waypoint_generator'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_generator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/waypoint_generator:$ROS_PACKAGE_PATH"

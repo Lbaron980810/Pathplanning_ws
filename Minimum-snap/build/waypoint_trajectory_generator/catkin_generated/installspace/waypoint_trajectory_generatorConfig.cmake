@@ -67,14 +67,14 @@ set(waypoint_trajectory_generator_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(waypoint_trajectory_generator_SOURCE_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/src/waypoint_trajectory_generator)
-  set(waypoint_trajectory_generator_DEVEL_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_trajectory_generator)
+  set(waypoint_trajectory_generator_SOURCE_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/waypoint_trajectory_generator)
+  set(waypoint_trajectory_generator_DEVEL_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_trajectory_generator)
   set(waypoint_trajectory_generator_INSTALL_PREFIX "")
   set(waypoint_trajectory_generator_PREFIX ${waypoint_trajectory_generator_DEVEL_PREFIX})
 else()
   set(waypoint_trajectory_generator_SOURCE_PREFIX "")
   set(waypoint_trajectory_generator_DEVEL_PREFIX "")
-  set(waypoint_trajectory_generator_INSTALL_PREFIX /home/liuboyuu/Pathplanning_ws/chap5_ws/install)
+  set(waypoint_trajectory_generator_INSTALL_PREFIX /home/nrsl/nros/Pathplanning_ws/Minimum-snap/install)
   set(waypoint_trajectory_generator_PREFIX ${waypoint_trajectory_generator_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/liuboyuu/Pathplanning_ws/chap5_ws/install/lib;/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/lib;/home/liuboyuu/git-nrs/tilt_propeller/catkin_ws/devel/lib;/home/liuboyuu/omniAM/Catkin-WS/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/nrsl/nros/Pathplanning_ws/Minimum-snap/install/lib;/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(waypoint_trajectory_generator_LIBRARIES ${waypoint_trajectory_generator_LIBRARIES})
 
   _list_append_unique(waypoint_trajectory_generator_LIBRARY_DIRS ${${waypoint_trajectory_generator_dep}_LIBRARY_DIRS})
-  list(APPEND waypoint_trajectory_generator_EXPORTED_TARGETS ${${waypoint_trajectory_generator_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(waypoint_trajectory_generator_EXPORTED_TARGETS ${${waypoint_trajectory_generator_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

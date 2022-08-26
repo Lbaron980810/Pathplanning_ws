@@ -1,1 +1,1 @@
-/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake

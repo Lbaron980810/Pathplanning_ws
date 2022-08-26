@@ -23,6 +23,14 @@
 (intern "*TYPE_TIME*" (find-package "QUADROTOR_MSGS::TRAJECTORYMATRIX"))
 (shadow '*TYPE_TIME* (find-package "QUADROTOR_MSGS::TRAJECTORYMATRIX"))
 (defconstant quadrotor_msgs::TrajectoryMatrix::*TYPE_TIME* 2)
+
+(defun quadrotor_msgs::TrajectoryMatrix-to-symbol (const)
+  (cond
+        ((= const 0) 'quadrotor_msgs::TrajectoryMatrix::*TYPE_UNKNOWN*)
+        ((= const 1) 'quadrotor_msgs::TrajectoryMatrix::*TYPE_POLY*)
+        ((= const 2) 'quadrotor_msgs::TrajectoryMatrix::*TYPE_TIME*)
+        (t nil)))
+
 (defclass quadrotor_msgs::TrajectoryMatrix
   :super ros::object
   :slots (_header _type _id _name _format _data ))

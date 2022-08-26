@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/lib/libdecode_msgs.pdb"
+  "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so"
   "CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o"
-  "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.pdb"
-  "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so"
 )
 
 # Per-language clean rules from dependency scanning.

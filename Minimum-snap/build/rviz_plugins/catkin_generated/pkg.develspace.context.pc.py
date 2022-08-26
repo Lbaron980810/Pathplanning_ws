@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "rviz_plugins"
-PROJECT_SPACE_DIR = "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/rviz_plugins"
+PROJECT_SPACE_DIR = "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/rviz_plugins"
 PROJECT_VERSION = "0.0.0"

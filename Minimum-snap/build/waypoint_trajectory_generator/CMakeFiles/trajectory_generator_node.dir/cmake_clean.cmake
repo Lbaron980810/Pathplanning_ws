@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_node.cpp.o"
+  "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_trajectory_generator/lib/waypoint_trajectory_generator/trajectory_generator_node"
+  "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_trajectory_generator/lib/waypoint_trajectory_generator/trajectory_generator_node.pdb"
+  "CMakeFiles/trajectory_generator_node.dir/src/traj_opt_test.cpp.o"
   "CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o"
-  "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_trajectory_generator/lib/waypoint_trajectory_generator/trajectory_generator_node.pdb"
-  "/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/waypoint_trajectory_generator/lib/waypoint_trajectory_generator/trajectory_generator_node"
 )
 
 # Per-language clean rules from dependency scanning.

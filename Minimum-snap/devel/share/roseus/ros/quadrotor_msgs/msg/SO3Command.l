@@ -1,1 +1,1 @@
-/home/liuboyuu/Pathplanning_ws/chap5_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l
+/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l

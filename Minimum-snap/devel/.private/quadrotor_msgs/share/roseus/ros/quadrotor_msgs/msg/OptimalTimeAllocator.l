@@ -29,6 +29,16 @@
 (intern "*ACTION_WARN_IMPOSSIBLE*" (find-package "QUADROTOR_MSGS::OPTIMALTIMEALLOCATOR"))
 (shadow '*ACTION_WARN_IMPOSSIBLE* (find-package "QUADROTOR_MSGS::OPTIMALTIMEALLOCATOR"))
 (defconstant quadrotor_msgs::OptimalTimeAllocator::*ACTION_WARN_IMPOSSIBLE* 5)
+
+(defun quadrotor_msgs::OptimalTimeAllocator-to-symbol (const)
+  (cond
+        ((= const 1) 'quadrotor_msgs::OptimalTimeAllocator::*ACTION_ADD*)
+        ((= const 2) 'quadrotor_msgs::OptimalTimeAllocator::*ACTION_ABORT*)
+        ((= const 3) 'quadrotor_msgs::OptimalTimeAllocator::*ACTION_WARN_START*)
+        ((= const 4) 'quadrotor_msgs::OptimalTimeAllocator::*ACTION_WARN_FINAL*)
+        ((= const 5) 'quadrotor_msgs::OptimalTimeAllocator::*ACTION_WARN_IMPOSSIBLE*)
+        (t nil)))
+
 (defclass quadrotor_msgs::OptimalTimeAllocator
   :super ros::object
   :slots (_header _start_time _final_time _trajectory_id _action _K _K_max _a _b _s _time _time_acc _s_step _debug_info ))

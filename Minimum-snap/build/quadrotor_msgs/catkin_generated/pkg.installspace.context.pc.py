@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lencode_msgs;-ldecode_msgs".split(';') if "-lencode_msgs;-ldecode_msgs" != "" else []
 PROJECT_NAME = "quadrotor_msgs"
-PROJECT_SPACE_DIR = "/home/liuboyuu/Pathplanning_ws/chap5_ws/install"
+PROJECT_SPACE_DIR = "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/install"
 PROJECT_VERSION = "0.0.0"
