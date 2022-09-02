@@ -1,6 +1,0 @@
-devel_space: /home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel
-install: false
-install_space: /home/nrsl/nros/Pathplanning_ws/Minimum-snap/install
-profile: default
-source_space: /home/nrsl/nros/Pathplanning_ws/Minimum-snap/src
-workspace: /home/nrsl/nros/Pathplanning_ws/Minimum-snap

@@ -1,1 +1,0 @@
-/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig-version.cmake

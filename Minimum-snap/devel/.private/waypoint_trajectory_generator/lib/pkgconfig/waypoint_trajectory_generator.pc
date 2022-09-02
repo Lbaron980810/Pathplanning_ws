@@ -1,8 +1,0 @@
-prefix=/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_trajectory_generator
-
-Name: waypoint_trajectory_generator
-Description: Description of waypoint_trajectory_generator
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

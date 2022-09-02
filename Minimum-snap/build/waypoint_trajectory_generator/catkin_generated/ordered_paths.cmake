@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/lib;/opt/ros/noetic/lib")

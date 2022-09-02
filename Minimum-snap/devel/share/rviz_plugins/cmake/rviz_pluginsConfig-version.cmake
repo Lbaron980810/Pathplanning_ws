@@ -1,1 +1,0 @@
-/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake

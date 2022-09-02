@@ -1,3 +1,0 @@
-[ 33%] [32mBuilding CXX object CMakeFiles/trajectory_generator_node.dir/src/trajectory_generator_waypoint.cpp.o[0m
-[ 66%] [32m[1mLinking CXX executable /home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/waypoint_trajectory_generator/lib/waypoint_trajectory_generator/trajectory_generator_node[0m
-[100%] Built target trajectory_generator_node

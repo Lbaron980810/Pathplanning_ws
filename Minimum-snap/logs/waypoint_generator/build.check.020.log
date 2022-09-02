@@ -1,1 +1,0 @@
-/usr/bin/cmake -S/home/nrsl/nros/Pathplanning_ws/Minimum-snap/src/waypoint_generator -B/home/nrsl/nros/Pathplanning_ws/Minimum-snap/build/waypoint_generator --check-build-system CMakeFiles/Makefile.cmake 0

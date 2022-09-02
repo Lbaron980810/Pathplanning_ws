@@ -1,1 +1,0 @@
-/home/nrsl/nros/Pathplanning_ws/Minimum-snap/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake
