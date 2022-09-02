@@ -66,17 +66,17 @@ Eigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(
 	    {
 		    for (int k = 0; k < p_num1d; k++)
 		    {
-			    if (k >= j - 4) 
+			    if (k >= j - d_order)
 			    {
-				    A_j(j, k) = pow(t, k - (j - 4)) * Factorial(k) / Factorial(k - (j - 4));
+				    A_j(j, k) = pow(t, k - (j - d_order)) * Factorial(k) / Factorial(k - (j - d_order));
 			    }
 		    }
 	    }
 	    A.block(i * p_num1d, i * p_num1d, p_num1d, p_num1d) = A_j;
     }
-    // std::cout << "Matrix A size and content" << std::endl;
-    // std::cout << A.rows() << "	" << A.cols() << std::endl;
-    // std::cout << A << std::endl;
+     std::cout << "Matrix A size and content" << std::endl;
+     std::cout << A.rows() << "	" << A.cols() << std::endl;
+     std::cout << A << std::endl;
 
     /*   Produce the dereivatives in X, Y and Z axis directly.  */
 
@@ -222,6 +222,6 @@ Eigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(
     }
 
     std::cout << "PolyCoeff" << std::endl;
-    std::cout << PolyCoeff << std::endl;
+    std::cout << PolyCoeff.transpose() << std::endl;
     return PolyCoeff;
 }
